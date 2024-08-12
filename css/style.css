@@ -1,0 +1,268 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Nos permite activar un desplazamiento suave (smooth scroll) al pulsar en un enlace de anclas <a> */
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    position: relative;
+}
+
+/* Se utiliza la extensión "ColorZilla" para configurar el color del <header>, el <footer>, etc. */
+/* Header */
+header {
+    width: 100%; 
+    height: 10%;
+    background-color: #FF3C3C;
+    top:0;
+    position:sticky;
+    border: 1px solid white;
+}
+
+#logo{
+    width: 10%;
+    background-color:  #FF3C3C;
+    float: left;
+    margin-left: 2%;
+    font-weight: bold;
+    position: fixed;
+    top:25px;
+    font-size: 2.0rem; 
+    color: white;
+}
+
+nav ul {
+    /* float: right; */
+    margin-right: 2%;
+    position: fixed;
+    top:25px;
+    right: 120px;
+}
+
+li {
+    font-size: 1.3rem;  
+    font-weight: bold;
+    display: inline-block;
+}
+
+h1,h4 {
+    text-align: center;
+}
+
+/* [EnConstrucción] - Queda pendiente incluir en el botón la figura del carrito */
+#miCarrito {
+    /* Botón */
+    font-size: 1.5rem;
+    border: .5px solid rgba(0, 0, 0, 0.724);
+    border-radius: 8px;
+    background-color: black;
+    float: right;
+    padding: 4px; 
+    position: relative;
+    top: 25px;
+    right: 20px;   
+} 
+
+.verMas {
+    /* Botón verMás */
+    font-size: 1.2rem; 
+    /* float: left; */
+    display: none;
+}
+
+.texto-footer {
+    font-size: 1.1rem; 
+    text-align: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: 80%;
+    background-color: #EAEDED;
+}
+
+#banner-principal {
+    height: 35%;
+    background-color:#ff694838;
+}
+
+#banner-pagos {
+    height: 15%;
+    background-color: #ff694838;
+}
+
+#nuestras-ofertas {
+    height: 55%;
+    background-color: #ff694889;
+}
+
+/* [EnConstrucción] - La idea es generar anuncios de carrusel para compartir múltiples 
+    imágenes un solo anuncio deslizable.*/
+#productos-oferta { 
+    /* Es el contenedor de los productos*/
+    width: 1200px;
+    height: 380px;
+    border-radius: 8px;
+    background-color:#C0C0C0;
+    margin: auto;
+    border: 1px solid white; 
+    text-align:center;
+} 
+
+#prod-1 {
+    background-image: url("../assets/images/Producto-1.png");
+}
+
+#prod-2 {
+    background-image: url("../assets/images/Producto-2.png");
+}
+
+#prod-3 {
+    background-image: url("../assets/images/Producto-3.png");
+}
+
+#prod-4 {
+    background-image: url("../assets/images/Producto-4.png");
+}
+
+.producto-oferta {
+    /* Representa cada producto (tarjeta con "img + precio") que se muestra como ofertas (por ahora 4 ofertas !) */
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 280px;
+    height: 340px;
+    margin: 2px;
+    display: inline-block; 
+    margin-top: 20px; 
+    margin-left: 10px;  
+    /* position: relative; */
+}
+
+.producto-info {
+    /* producto-info: Clase común para los dos <p> [descripción del producto] + [leyenda del precio]  */
+    background-color: #EFD0C9;
+    width: 280px;
+    height: 40px;
+    font-family: sans-serif;
+}
+
+.producto-desc {
+    /* Es la leyenda de la descripción del producto */
+    position: absolute;
+    bottom: 270px;
+    font-size: 1.1rem;
+}
+
+.producto-precio {
+    /* Es la leyenda del precio en el producto */
+    position: absolute;
+    bottom: 230px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pago-tarjeta {
+    width: 1200px;
+    height: 60px;
+    background-color:#EAEDED;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid black; 
+}
+
+.plan-tarjetas {
+    /* Corresponde a la leyenda de las tarjetas de crédito */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align:center;
+    position: relative;
+}
+
+.plan-adherido{
+    font-size: 1.0rem;
+    font-weight:normal;
+}
+
+.img-central {
+    /* Corresponde a la imagen */
+    /* border: .5px solid  rgba(0, 0, 0, 0.724); */
+    border: .5px solid white;
+    width: 1200px;
+    height: 250px;
+    background-color:white;
+    border-radius: 12px;
+    border-width: 2px;
+    margin: auto;
+    background-image: url("../assets/images/home-banner.png");
+    /* overflow: hidden; */
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+
+}
+
+#pie-contacto {
+    width: 80%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+#pie-contacto article {
+   /* width: 20%; */
+   margin: 0 auto;
+   padding: 1rem;
+   vertical-align: top;
+   display: inline-block;
+}
+
+.texto-footer {
+    /* Es el texto derecho autor */
+    font-size: 1.3rem;
+}
+
+.pie-redes {
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    height:  30%;
+    background-color: rgba(86, 80, 76, 0.815);
+    color: white;
+} 
+
+#imagen-nosotros {
+    /* Corresponde a la imagen que aparece a la izquierda en "nosotros.html" */
+    width: 50%;
+    height: 90%;
+    background-color: #ff694838;
+    font-size: 1rem;
+    /* Pendiente la definición de la imagen a desplegar en este espacio */
+    /* background-image: url(""); */
+  }
+
+  
+#texto-nosotros {
+    /* Corresponde los textos que aparecen a la derecha en "nosotros.html" */
+    width: 50%;
+    height: 90%;
+    background-color: #ff694889;
+    display: inline-block; 
+    font-size: 1.5rem;
+  }
+  

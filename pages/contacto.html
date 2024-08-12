@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>nuestraTienda | Contacto</title>
+</head>
+<body>
+
+    <header>
+        <div id="logo">@nuestraTienda</div>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">inicio |</a></li>
+            <li><a href="../pages/nosotros.html">nosotros |</a></li>
+            <li><a href="../pages/tienda.html">tienda |</a></li>
+            <li><a href="../pages/contacto.html">contacto</a></li>
+          </ul>
+        </nav>
+
+        <div>
+            <a id="miCarrito" href="../pages/carrito.html">miCarrito</a>
+        </div>
+
+    </header>
+
+   <main>
+    <h2>Formulario de contacto</h2>
+    <!-- La idea aquí es a través de la invocación a otro formulario (formulario-recibido.html) dar la sensación 
+     de que se recibieron los datos del formulario de contacto.-->
+    <form action="formulario-recibido.html" method="post">
+        <!-- retire de la etiqueta <form> el (method="post") para poder llamar al otro formulario-->
+            <fieldset>
+            <section>
+            <!-- <fieldset> se utiliza para agrupar elementos relacionados dentro de un formulario -->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="" id="nombre" placeholder="Nombres" required/>        
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="" id="apellido" placeholder="Apellidos" required/> 
+            </div>
+                 
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="" id="direccion" placeholder="Dirección" required/>   
+                
+            </div>
+            <div>
+                <!-- En el Wireframe puse un campo "Dirección 2" que no va. Voy a incluir el correo.
+                Queda para próxima entrega ajustar el Wireframe-->
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="" id="correo" placeholder="ejemplo@mail.com" required/> 
+            </div>
+            <div>
+                <!-- Para esta versión País queda como una caja simple-->
+                <label for="pais">País:</label>
+                <input type="text" name="" id="pais" placeholder="País" required/> 
+            </div>
+            <div>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="" id="ciudad" placeholder="Ciudad" required/> 
+            </div>
+            <div>
+                <label for="cpostal">Código Postal:</label>
+                <input type="number" name="" id="cpostal" placeholder="Código Postal" min="1" max="99999"/>  
+            </div>
+
+            <div>
+                <label for="tel">Teléfono:</label>
+                <input type="text" name="" id="tel" placeholder="Teléfono" required/> 
+            </div>                       
+        </section>
+        
+        <section>
+            <div>
+                <label for="comentario">Mensaje:</label>
+                <textarea name="" id="comentario" cols="30" rows="10" placeholder="Tus comentarios"></textarea>
+            </div>
+        </section>  
+    </fieldset>
+    <!-- <br/> -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+   </main>
+
+   <footer>
+    <section id="pie-contacto">
+        <p class="texto-footer">© 2024 nuestraTienda Online (Grupo8) | PreEntrega1</p>
+    </section>
+
+    <section id="pie-redes">
+      <article>
+        <h3>Encuéntranos en:</h3>
+        <a href="#">Facebook</a>
+        <a href="#">X / Twitter</a>
+        <a href="#">Instagram</a>
+      </article> 
+    </section>     
+   </footer>
+</body>
+</html>
