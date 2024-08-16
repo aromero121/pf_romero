@@ -10,7 +10,23 @@
 </head>
 <body>
 
-    <header>
+    <header class="container-fluid bg-danger">
+        <div class="row h-100" id="logo">@nuestraTienda</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">inicio |</a></li>
+                <li><a href="../pages/nosotros.html">nosotros |</a></li>
+                <li><a href="../pages/tienda.html">tienda |</a></li>
+                <li><a href="../pages/contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <a id="miCarrito" href="../pages/carrito.html">miCarrito</a>
+        </div>
+    </header>
+
+    <!-- <header>
         <div id="logo">@nuestraTienda</div>
 
         <nav>
@@ -26,89 +42,137 @@
             <a id="miCarrito" href="../pages/carrito.html">miCarrito</a>
         </div>
 
-    </header>
+    </header> -->
 
    <main>
-    
-    <div class="container">
-        <div>
-            <h2 class="h2">Formulario de contacto</h2>
-        </div>
 
-        <form  class="row" action="formulario-recibido.html" method="post">
-            
-                <fieldset>
-                <section>
-            
-                <div class="col-6">
-                    <!-- <label for="nombre">Nombre:</label> -->
-                    <input type="text" name="" id="nombre" placeholder="Nombres" required/>        
-                </div>
-                <div class="col-6">
-                    <!-- <label for="apellido">Apellido:</label> -->
-                    <input type="text" name="" id="apellido" placeholder="Apellidos" required/> 
-                </div>
-                    
+        <div class="container">   
+            <div class="row mb-5">
                 <div class="col-12">
-                    <!-- <label class="form-label" for="direccion">Dirección:</label> -->
-                    <input type="text" name="" id="direccion" placeholder="Dirección" required/>   
+                    <h2 class="h2">Formulario de contacto</h2>
+                </div>
+            </div> 
+
+            <fieldset>
+                <form class="mt-3">
+                    <div class="row mb-3">
+                        <label class="col-1 col-form-label" for="nombre">Nombre</label>
+                            <div class="col-5">
+                                <input class="form-control" type="text" name="" id="nombre" placeholder="Nombres" required/>        
+                            </div>
+
+                        <label class="col-1 col-form-label" for="apellido">Apellido</label>
+                            <div class="col-5">
+                                <input class="form-control" type="text" name="" id="apellido" placeholder="Apellidos" required/>    
+                            </div>
+                    </div>
                     
-                </div>
-                <div class="col-6">
-                    <!-- <label class="form-label" for="correo">Correo electrónico:</label> -->
-                    <input type="email" name="" id="correo" placeholder="ejemplo@mail.com" required/> 
-                </div>
-                <div>
-                    <!-- <label for="pais">País:</label> -->
-                    <input type="text" name="" id="pais" placeholder="País" required/> 
-                </div>
-                <div>
-                    <!-- <label for="ciudad">Ciudad:</label> -->
-                    <input type="text" name="" id="ciudad" placeholder="Ciudad" required/> 
-                </div>
-                <div>
-                    <!-- <label for="cpostal">Código Postal:</label> -->
-                    <input type="number" name="" id="cpostal" placeholder="Código Postal" min="1" max="99999"/>  
-                </div>
+                    <div class="row mb-3">
+                        <label class="col-1 col-form-label" for="direccion">Dirección</label> 
+                        <div class="col-11">
+                            <input class="form-control" type="text" name="" id="direccion" placeholder="Dirección" required/>                    
+                        </div>
+                        
+                    </div>
+                        
+                    <div class="row mb-3">
+                        <label class="col-1 col-form-label" for="tel">Teléfono</label> 
+                        <div class="col-11">
+                            <input class="form-control" type="text" name="" id="tel" placeholder="Teléfono" required/> 
+                        </div>
+                    </div>  
+                            
+                    <div class="row mb-3">
+                        <label class="col-1 col-form-label" for="correo">Correo</label> 
+                        <div class="col-11">
+                            <input class="form-control" type="email" name="" id="correo" placeholder="ejemplo@mail.com" required/> 
+                        </div>
+                    </div>       
 
-                <div>
-                    <!-- <label for="tel">Teléfono:</label> -->
-                    <input type="text" name="" id="tel" placeholder="Teléfono" required/> 
-                </div>                       
-            </section>
-            
-            <section class="row">
-                <div class="col-12">
-                    <!-- <label for="comentario">Mensaje:</label> -->
-                    <textarea name="" id="comentario" cols="30" rows="10" placeholder="Tus comentarios"></textarea>
-                </div>
-            </section>  
-        </fieldset>
-            <!-- Botones: Enviar y Limpiar -->
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-            <div>
-                <input type="reset" value="Limpiar">
-            </div>
-        </form>
-    </div>
+                    <div class="row mb-3">
+                        
+                        <label class="col-1 col-form-label" for="pais">País</label>
+                        <div class="col-3">
+                            <input class="form-control" type="text" name="" id="pais" placeholder="País" required/> 
+                        </div>
+                            
+                        <label class="col-1 col-form-label" for="ciudad">Ciudad</label> 
+                        <div class="col-3">
+                            <input class="form-control" type="text" name="" id="ciudad" placeholder="Ciudad" required/> 
+                        </div>
 
+                        <label class="col-1 col-form-label" for="cpostal">CP</label>
+                        <div class="col-3">                       
+                            <input class="form-control" type="number" name="" id="cpostal" placeholder="Código Postal" min="1" max="99999"/>  
+                        </div> 
+                        
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <label class="col-1" for="comentario">Mensaje</label> 
+                        <div class="col-11">
+                            <textarea name="" id="comentario" cols="135" rows="10" placeholder="Tus comentarios"></textarea>
+                        </div>
+                    </div> 
+            </fieldset>  
+
+                <div class="row mb-3">           
+                    <div class="col-10">
+                    </div>
+                    <div class="col-1">
+                        <input class="btn btn-dark btn-lg active" type="reset" value="Limpiar">
+                    </div> 
+                    <div class="col-1">
+                        <input class="btn btn-dark btn-lg" type="submit" value="Enviar">
+                    </div>
+                </div> 
+                 
+            </form>                               
+        </div>         
    </main>
 
    <footer>
-    <section id="pie-contacto">
-        <p class="texto-footer">© 2024 nuestraTienda Online (Grupo8) | PreEntrega2</p>
-    </section>
+    <div class="container-fluid">
+        <div class="row p-5 pt-3 bg-dark text-white">
+            
+            <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                <p class="h4">@nuestraTienda Online (Grupo8)</p>
+            </div>
 
-    <section id="pie-redes">
-      <article>
-        <h3>Encuéntranos en:</h3>
-        <a href="#">Facebook</a>
-        <a href="#">X / Twitter</a>
-        <a href="#">Instagram</a>
-      </article> 
-    </section>     
+            <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                <p class="h5 mb-3">¡Envíos gratis!</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                <p class="h5 mb-3">Atención y ubicación</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">598+99123456</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Mercedes 1010, Montevideo UY</a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3 text-center">
+                <p class="h5 mb-3">Encuéntranos en:</p>
+
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">X / Twitter</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 pt-3">
+                <p class="text-white text-center">© 2024 nuestraTienda Online (Grupo8) | PreEntrega2</p>    
+            </div>
+        </div>
+
+    </div>
    </footer>
 
    <script 
