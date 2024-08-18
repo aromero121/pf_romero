@@ -18,7 +18,7 @@ header {
 
 main {
     height: 85vh;
-    background-color: cyan;
+    background-color:#F8F9FA;
 }
 
 footer {
@@ -28,6 +28,12 @@ footer {
 .navbar {
     background:#FF3C3C;
   } 
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #212529; 
+    color: white; 
+    border-radius: 3px; 
+}
 
 .text-justify {
     text-align: justify;
@@ -71,7 +77,8 @@ footer {
 
 }
 
-.container-flex-prod-item {
+/* Es el contendor externo GRIS para los productos y los precios */
+.container-flex-prod-items {
     width: 1200px;
     height: 410px;
     background-color:#C0C0C0;
@@ -79,12 +86,82 @@ footer {
     border-radius: 12px;
     border-width: 2px;
     margin: auto;
-    /* background-image: url("../assets/images/home-banner.png"); */
-    /* background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat; */
+    display: flex;
+    padding: 12px;
+    justify-content: space-around;
 }
 
+/* Son las propiedades de las 4 cajas superiores del producto */
+.container-flex-prod-item-p {
+    width: 280px;
+    height: 380px;
+    background-color:white;
+    border: .5px solid black;
+    border-radius: 12px;
+    border-width: 1px;
+    display: flex;
+    align-items: flex-end;
+    
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/*borrar ?*/
+.container-flex-prod-item-pre {
+    width: 280px;
+    height: 110px;
+    background-color:#EFD0C9;
+    border: .5px solid white;
+    border-radius: 12px;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+
+#prod-1 {
+    background-image: url("../assets/images/Producto-1.png");
+}
+
+#prod-2 {
+    background-image: url("../assets/images/Producto-2.png");
+}
+
+#prod-3 {
+    background-image: url("../assets/images/Producto-3.png");
+}
+
+#prod-4 {
+    background-image: url("../assets/images/Producto-4.png");
+}
+
+
+.producto-info {
+    /* producto-info: Clase común para los dos <p> [descripción del producto] + [leyenda del precio]  */
+    font-family: sans-serif;
+}
+
+.producto-desc {
+    /* Es la leyenda de la descripción del producto */
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.producto-precio {
+    /* Es la leyenda del precio en el producto */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-flex- {
+    width: 280px;
+    height: 90px;
+    background-color:white;
+    border: .5px solid black;
+    border-radius: 12px;
+    border-width: 1px;  
+}
 
 .container-flex-tarjeta {
     height: 10vh;
@@ -94,7 +171,6 @@ footer {
     align-items: center;
 }
 
-
 .container-flex-tarjeta-item {
     width: 1200px;
     height: 75px;
@@ -102,5 +178,18 @@ footer {
     border: .5px solid black;
     border-radius: 12px;
     border-width: 1px;
-    margin: auto;
+}
+
+/* Leyenda PAGÁ con tarjetas de crédito */
+.plan-tarjetas {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align:center;
+    /* background-color: aquamarine; */
+}
+/* Leyenda de ADHERIDOS A TODAS las tarjetas de crédito  */
+.plan-adherido{
+    font-size: 1.0rem;
+    font-weight:normal;
+    /* background-color: blueviolet; */
 }
