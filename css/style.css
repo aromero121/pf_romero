@@ -195,7 +195,9 @@ footer {
 }
 
 /*---------------------------------------------*/
-/* "tienda.html" con GRID ---------------------*/
+/*                                             */
+/*      "tienda.html" con GRID                 */
+/*                                             */
 /*---------------------------------------------*/
 .grid-container-categ {
     height: 75vh;
@@ -300,3 +302,59 @@ footer {
     border-width: 1px;
 } 
 
+
+/*---------------------------------------------*/
+/*                                             */
+/*      "carrito.html" con GRID                */
+/*                                             */
+/*---------------------------------------------*/
+
+.grid-container-carrito {
+    height: 75vh;
+    background-color:#EFD0C9;
+    display: grid;
+    grid-template-columns: 200px 350px 280px 280px;
+    grid-template-rows: 70px 240px 240px 90px ;
+    grid-template-areas: 
+        "item-1 item-1  item-2 item-2"
+        "item-3 item-4 item-5 item-6"
+        "item-7  item-8 item-9 ."
+        "item-11 item-12 . ."
+        ; 
+    justify-content:center;  
+    column-gap: 10px ;
+    row-gap: 1px;   
+}
+
+
+.carrito-item {
+    background-color:white;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.item-1 {    
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-2 {    
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+.item-5 {    
+    
+}
+
+.item-10 {
+    /* background-color:#EFD0C9;
+    border: 1px solid #EFD0C9; */
+    
+}
+
+.item-13, .item-14 {    
+   display: none;
+}
