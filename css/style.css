@@ -39,10 +39,6 @@ footer {
     text-align: justify;
   }
 
-/*    
-#nosotros {
-    background:#EFD0C9; 
-}  */
 
 /* "container-flex-bnr": banner-principal con imagen */
 .container-flex-bnr {
@@ -107,7 +103,6 @@ footer {
     background-repeat:no-repeat;
 }
 
-/*borrar ?*/
 .container-flex-prod-item-pre {
     width: 280px;
     height: 110px;
@@ -117,7 +112,6 @@ footer {
     border-width: 1px;
     margin-bottom: 10px;
 }
-
 
 #prod-1 {
     background-image: url("../assets/images/Producto-1.png");
@@ -134,7 +128,6 @@ footer {
 #prod-4 {
     background-image: url("../assets/images/Producto-4.png");
 }
-
 
 .producto-info {
     /* producto-info: Clase común para los dos <p> [descripción del producto] + [leyenda del precio]  */
@@ -185,13 +178,11 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     text-align:center;
-    /* background-color: aquamarine; */
 }
 /* Leyenda de ADHERIDOS A TODAS las tarjetas de crédito  */
 .plan-adherido{
     font-size: 1.0rem;
     font-weight:normal;
-    /* background-color: blueviolet; */
 }
 
 /*---------------------------------------------*/
@@ -344,15 +335,34 @@ footer {
     grid-column-end: 5;
 }
 
-
-.item-5 {    
-    
+.item-1, .item-2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color:#FF3C3C;
+    color: white;
+    border-radius: 3px;
+    border-width: 1px;
 }
 
-.item-10 {
-    /* background-color:#EFD0C9;
-    border: 1px solid #EFD0C9; */
-    
+.item-3 , .item-7, .item-4 , .item-8{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;  
+    border: .5px solid black;
+    border-radius: 12px;
+    border-width: 1px;
+}
+
+.item-4 , .item-8{
+    background-color:#e4dede ;    
+}
+
+.item-3 {    
+    background-image: url("../assets/images/Producto-1.png");       
+}
+
+.item-7 {    
+    background-image: url("../assets/images/Producto-4.png");    
 }
 
 .item-13, .item-14 {    
