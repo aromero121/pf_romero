@@ -1,0 +1,20 @@
+
+@import "./variables";
+
+@for $i from 14 through 17 {
+    .prod-#{$i} {
+        //@include Prod-14-a-17();
+        .producto-info {
+            @include producto-informacion();
+         &.producto-desc {
+          
+           @include producto-descripcion();
+         }
+         &.producto-precio {
+          
+           @include producto-precio();
+         }
+       }
+
+    }
+}

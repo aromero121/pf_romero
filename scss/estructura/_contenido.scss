@@ -1,0 +1,84 @@
+
+.navbar {
+    background:$color-header;
+
+    .navbar-nav .nav-link:hover {
+        background-color: #212529; 
+        color: white; 
+        border-radius: 3px; 
+    }
+
+  } 
+
+.text-justify {
+    text-align: justify;
+  }
+
+// Para ir por el camino de un FOR
+#prod-1 {
+    background-image: url($img-producto-1);
+}
+
+#prod-1:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+#prod-2 {
+    background-image: url($img-producto-2);
+}
+
+#prod-2:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+#prod-3 {
+    background-image: url($img-producto-3);
+}
+
+#prod-3:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+#prod-4 {
+    background-image: url($img-producto-4);
+}
+
+#prod-4:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+// @for $i from 1 through 4 { 
+
+// }
+
+@keyframes cambiar-color {
+    0% {
+      color:#ff0;
+    }
+    25% {
+        color: #f80;
+      }
+    50% {
+      color:#000;
+    }
+    75% {
+      color: #f80;
+    }
+    100% {
+        color: #000;
+      }
+  }
+  
+.animar-texto {
+    font-size: 30px;
+    font-weight: bold;
+    color: red; // Color inicial
+    
+    &:hover {
+      animation: cambiar-color 0.5s forwards; 
+    }
+  }

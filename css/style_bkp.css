@@ -1,30 +1,29 @@
-
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
-
+} */
+/* 
 body {
     height: 100vh;
-}
-
+} */
+/* 
 header {
     height: 10vh;  
     background:#FF3C3C; 
     top:0;
     position: sticky;
     border: 1px solid white;
-}
-
+} */
+/* 
 main {
     height: 85vh;
     background-color:#F8F9FA;
-}
-
+} */
+/* 
 footer {
     height: 5vh;
-}
- 
+} */
+/*  
 .navbar {
     background:#FF3C3C;
   } 
@@ -37,19 +36,19 @@ footer {
 
 .text-justify {
     text-align: justify;
-  }
+  } */
 
 
 /* "container-flex-bnr": banner-principal con imagen */
-.container-flex-bnr {
+/* .container-flex-bnr {
     height: 30vh;
     background-color:#EFD0C9;
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
-
+} */
+/* 
 .container-flex-bnr-item {
     width: 1200px;
     height: 275px;
@@ -145,8 +144,8 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-}
-
+} */
+********************************************************************************************
 .container-flex- {
     width: 280px;
     height: 90px;
@@ -184,7 +183,7 @@ footer {
     font-size: 1.0rem;
     font-weight:normal;
 }
-
+*****************************************************************************
 /*---------------------------------------------*/
 /*                                             */
 /*      "tienda.html" con GRID                 */
@@ -368,3 +367,58 @@ footer {
 .item-13, .item-14 {    
    display: none;
 }
+
+  /* ----------------------------------------------------*/
+  /*                DESKTOP FIRST                        */
+  /* ----------------------------------------------------*/
+  
+  /* max-width: es un rango menor o igual */
+  @media screen and (max-width:1200px) {
+      
+  }
+  @media screen and (max-width:1024px) {
+ 
+  }
+ 
+  /* trabajar un rango medio, antes de llegar a ambos, puedo poner un espacio intermedio */
+  @media screen and (min-width:650px) and (max-width:1000px){
+    
+   
+  }
+ 
+  @media screen and (max-width:600px) {
+    /* De 600px para abajo va a tener la siguiente configuración, 
+    y se mantiene hasta el rango de 480px (es menor o igual) */
+    
+  }
+  @media screen and (max-width:480px) {
+ 
+ 
+  }
+  @media screen and (max-width:320px) {
+ 
+  }
+ 
+  /* ----------------------------------------------------*/
+  /*                MOBILE FIRST                         */
+  /* ----------------------------------------------------*/
+  
+  /* min-width: Es un rango mayor o igual */
+ @media screen and (min-width:1200px) {
+ 
+ }
+ @media screen and (min-width:1024px) {
+ 
+ }
+ @media screen and (min-width:600px) {
+ 
+ }
+ @media screen and (min-width:480px) {
+   
+ }
+ @media screen and (min-width:320px) {
+    
+ }
+ 
+ 
+ 
