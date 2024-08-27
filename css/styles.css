@@ -93,6 +93,9 @@ main .container-flex-prod .container-flex-prod-items .container-flex-prod-item-p
   justify-content: center;
   align-items: center;
 }
+.container-flex-tarjeta .t-gradiente {
+  background-image: linear-gradient(to left, #999999, #ffffff);
+}
 .container-flex-tarjeta .container-flex-tarjeta-item {
   width: 1200px;
   height: 75px;
