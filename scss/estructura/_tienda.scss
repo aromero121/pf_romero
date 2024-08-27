@@ -135,19 +135,43 @@ main {
             }
             
             &.prod-10 {   
-                background-image: url("../assets/images/Producto-5.png");   
+                background-image: url("../assets/images/Producto-5.png");
+                transform: rotateY(0deg);  
+                transition: transform 2s;
+
+                &.prod-10:hover {
+                  transform: rotateY(180deg);
+                }
             }
             
             &.prod-11 {              
                 background-image: url("../assets/images/Producto-6.png");
+                transform: rotateY(0deg);  
+                transition: transform 2s;
+
+                &.prod-11:hover {
+                  transform: rotateY(180deg);
+                }
             }
             
             &.prod-12 {                
                 background-image: url("../assets/images/Producto-7.png");
+                transform: rotateY(0deg);  
+                transition: transform 2s;
+
+                &.prod-12:hover {
+                  transform: rotateY(180deg);
+                }
             }
             
             &.prod-13 {
                 background-image: url("../assets/images/Producto-8.png");
+                transform: rotateY(0deg);  
+                transition: transform 2s;
+
+                &.prod-13:hover {
+                  transform: rotateY(180deg);
+                }
             }
         
         // Del 14 al 17 intente armarlo con un FOR (_prueba-for) !!!
@@ -169,11 +193,11 @@ main {
             .producto-info {
                  @include producto-informacion();
               &.producto-desc {
-                // Estilos para la descripción del producto en prod-14
+                
                 @include producto-descripcion();
               }
               &.producto-precio {
-                // Estilos para el precio del producto en prod-14
+                
                 @include producto-precio();
               }
             }

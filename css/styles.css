@@ -229,15 +229,35 @@ main .grid-container-categ .grid-item-categ.prod-9 {
 }
 main .grid-container-categ .grid-item-categ.prod-10 {
   background-image: url("../assets/images/Producto-5.png");
+  transform: rotateY(0deg);
+  transition: transform 2s;
+}
+main .grid-container-categ .grid-item-categ.prod-10.prod-10:hover {
+  transform: rotateY(180deg);
 }
 main .grid-container-categ .grid-item-categ.prod-11 {
   background-image: url("../assets/images/Producto-6.png");
+  transform: rotateY(0deg);
+  transition: transform 2s;
+}
+main .grid-container-categ .grid-item-categ.prod-11.prod-11:hover {
+  transform: rotateY(180deg);
 }
 main .grid-container-categ .grid-item-categ.prod-12 {
   background-image: url("../assets/images/Producto-7.png");
+  transform: rotateY(0deg);
+  transition: transform 2s;
+}
+main .grid-container-categ .grid-item-categ.prod-12.prod-12:hover {
+  transform: rotateY(180deg);
 }
 main .grid-container-categ .grid-item-categ.prod-13 {
   background-image: url("../assets/images/Producto-8.png");
+  transform: rotateY(0deg);
+  transition: transform 2s;
+}
+main .grid-container-categ .grid-item-categ.prod-13.prod-13:hover {
+  transform: rotateY(180deg);
 }
 main .grid-container-categ .grid-item-categ.prod-14 {
   background-color: #F4F2EE;
