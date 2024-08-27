@@ -145,33 +145,18 @@ main {
             }
             
             &.prod-11 {              
-                background-image: url("../assets/images/Producto-6.png");
-                transform: rotateY(0deg);  
-                transition: transform 2s;
-
-                &.prod-11:hover {
-                  transform: rotateY(180deg);
-                }
+                @extend .prod-10;
+                background-image: url("../assets/images/Producto-6.png");            
             }
             
-            &.prod-12 {                
+            &.prod-12 {        
+                @extend .prod-10;        
                 background-image: url("../assets/images/Producto-7.png");
-                transform: rotateY(0deg);  
-                transition: transform 2s;
-
-                &.prod-12:hover {
-                  transform: rotateY(180deg);
-                }
             }
             
             &.prod-13 {
+                @extend .prod-10;
                 background-image: url("../assets/images/Producto-8.png");
-                transform: rotateY(0deg);  
-                transition: transform 2s;
-
-                &.prod-13:hover {
-                  transform: rotateY(180deg);
-                }
             }
         
         // Del 14 al 17 intente armarlo con un FOR (_prueba-for) !!!
