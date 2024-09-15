@@ -13,67 +13,62 @@
     text-align: justify;
   }
 
-// Para ir por el camino de un FOR
-#prod-1 {
-    background-image: url($img-producto-1);
-    
-    &:hover {
-      transform: scale(1.05);
-      z-index: 2;
-  }
+#cuotas {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;   
 }
 
-#prod-2 {
-    background-image: url($img-producto-2);
-    
-    &:hover {
-      transform: scale(1.05);
-      z-index: 2;
-  }
+#tarjetas {
+  height: 5vh;
 }
 
-#prod-3 {
-    background-image: url($img-producto-3);
-    
-    &:hover {
-      transform: scale(1.05);
-      z-index: 2;
-  }
+#tarjetas-adheridos {
+  height: 5vh;
+  font-weight: bold;
+  text-align: center;  
 }
 
-#prod-4 {
-    background-image: url($img-producto-4);
-    
-    &:hover {
-      transform: scale(1.05);
-      z-index: 2;
-  }
+#prod-1,#prod-2,#prod-3,#prod-4,#prod-5,#prod-6,#prod-7,#prod-8 {
+  transition: height 1s;
 }
+
+#prod-1:hover,#prod-2:hover,#prod-3:hover,#prod-4:hover,#prod-5:hover,#prod-6:hover,#prod-7:hover,#prod-8:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    border: 2px solid black;
+}
+
+
+#cat-prod-1,#cat-prod-2,#cat-prod-3,#cat-prod-4 {
+    transition: height 1s;
+  }
 
 @keyframes cambiar-color {
-    0% {
-      color:#ff0;
-    }
-    25% {
-        color: #f80;
-      }
-    50% {
-      color:#000;
-    }
-    75% {
-      color: #f80;
-    }
-    100% {
-        color: #000;
-      }
+  0% {
+    color: #ff0;
   }
+  25% {
+    color: #f80;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #f80;
+  }
+  100% {
+    color: white;
+  }
+}
   
+
 .animar-texto {
-    font-size: 30px;
-    font-weight: bold;
-    color: red; 
-    
-    &:hover {
-      animation: cambiar-color 0.5s forwards; 
-    }
+  color: white;
+
+  &:hover {
+      animation: cambiar-color 0.5s forwards;
+      font-weight: bold; 
+      font-size: 2rem;
   }
+}
