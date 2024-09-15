@@ -1,7 +1,9 @@
 
-main {
-    background-color: #EFD0C9;
-}
+@import "../utilidades/variables";
+
+ main {
+     background-color: $color-fondo-carrito;
+ }
 
 #banner-carrito {
     height: 15vh;
@@ -10,7 +12,6 @@ main {
 #productos-carrito {
     height: 25vh;
 }
-
 
 #tarjetas {
     height: 5vh;

@@ -133,4 +133,8 @@ main {
   text-align: center;
 }
 
+#banner-letras, #banner-img {
+  background-color: #E85042;
+}
+
 /*# sourceMappingURL=styles.css.map */
