@@ -6,15 +6,7 @@ $color-fondo-producto:white;
 $color-fondo-carrito:#EFD0C9;
 $color-fondo-pages:#E85042;
 
-// $img-producto-1:"../assets/images/Producto-1.png";
-// $img-producto-2:"../assets/images/Producto-2.png";
-// $img-producto-3:"../assets/images/Producto-3.png";
-// $img-producto-4:"../assets/images/Producto-4.png";
-
-// Tiempo de transición de la tarjetas de producto
-$tiempo-transicion-prod: 0.2s;
-
-$banner-home:"../assets/images/home-banner.png";
+$tiempo-transicion-txt: 0.5s;
 
 @mixin img-ajuste {
   background-size:cover;
@@ -27,22 +19,12 @@ $banner-home:"../assets/images/home-banner.png";
 }
 
 @mixin producto-descripcion {
-    // Estilos para la descripción del producto
     font-size: 1.1rem;
     text-align: center;  
 }
 
 @mixin producto-precio {
-    // Estilos para el precio del producto
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 }
-
-$img-categorias: (
-    img-categoria-1: "../assets/images/categoria-1.jpg",
-    img-categoria-2: "../assets/images/categoria-2.jpg",
-    img-categoria-3: "../assets/images/categoria-3.jpg",
-    img-categoria-4: "../assets/images/categoria-4.jpg" 
-);
-

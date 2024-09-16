@@ -1,4 +1,9 @@
 
-#banner-letras,#banner-img {
-    background-color:#E85042;
-}
+@import "../utilidades/variables";
+
+#banner {
+    &-letras,
+    &-img {
+      background-color:$color-fondo-pages;
+    }
+  }

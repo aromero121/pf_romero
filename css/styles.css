@@ -7,16 +7,8 @@ body {
   height: 100vh;
 }
 
-#categorias-en-oferta {
-  height: 20vh;
-  font-weight: bold;
-  text-align: center;
-}
-
-#categorias-leyenda {
-  height: 8vh;
-  font-weight: bold;
-  text-align: center;
+#banner-oferta-letras {
+  background-color: #E85042;
 }
 
 .img-categ {
@@ -25,9 +17,20 @@ body {
   background-repeat: no-repeat;
 }
 
+#categorias-en-oferta {
+  height: 20vh;
+  font-weight: bold;
+  text-align: center;
+}
+
 #productos {
   height: 40vh;
-  /* transition: 0.2s; */
+}
+
+#categorias-leyenda {
+  height: 8vh;
+  font-weight: bold;
+  text-align: center;
 }
 
 header {
@@ -51,37 +54,91 @@ footer {
   border-radius: 3px;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-#cuotas {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-#tarjetas {
-  height: 5vh;
-}
-
-#tarjetas-adheridos {
-  height: 5vh;
-  font-weight: bold;
-  text-align: center;
-}
-
-#prod-1, #prod-2, #prod-3, #prod-4, #prod-5, #prod-6, #prod-7, #prod-8 {
+#prod-1 {
   transition: height 1s;
 }
-
-#prod-1:hover, #prod-2:hover, #prod-3:hover, #prod-4:hover, #prod-5:hover, #prod-6:hover, #prod-7:hover, #prod-8:hover {
+#prod-1:hover {
   transform: scale(1.05);
   z-index: 2;
   border: 2px solid black;
 }
 
-#cat-prod-1, #cat-prod-2, #cat-prod-3, #cat-prod-4 {
+#prod-2 {
+  transition: height 1s;
+}
+#prod-2:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#prod-3 {
+  transition: height 1s;
+}
+#prod-3:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#prod-4 {
+  transition: height 1s;
+}
+#prod-4:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#prod-5 {
+  transition: height 1s;
+}
+#prod-5:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#prod-6 {
+  transition: height 1s;
+}
+#prod-6:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#prod-7 {
+  transition: height 1s;
+}
+#prod-7:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#prod-8 {
+  transition: height 1s;
+}
+#prod-8:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid black;
+}
+
+#cat-prod-1 {
+  transition: height 1s;
+}
+
+#cat-prod-2 {
+  transition: height 1s;
+}
+
+#cat-prod-3 {
+  transition: height 1s;
+}
+
+#cat-prod-4 {
   transition: height 1s;
 }
 
@@ -111,6 +168,26 @@ footer {
   font-size: 2rem;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+#cuotas {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#tarjetas {
+  height: 5vh;
+}
+
+#tarjetas-adheridos {
+  height: 5vh;
+  font-weight: bold;
+  text-align: center;
+}
+
 main {
   background-color: #EFD0C9;
 }
@@ -133,8 +210,52 @@ main {
   text-align: center;
 }
 
+.banner-carrito-letras {
+  background-color: #E85042;
+}
+
 #banner-letras, #banner-img {
   background-color: #E85042;
+}
+
+.body-404 {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.error-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+.error-container .h1-404 {
+  font-size: 100px;
+  margin: 0;
+  color: #e85042;
+}
+.error-container .p-404 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.error-container .a-404 {
+  color: #fff;
+  background-color: #e85042;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.error-container .a-404:hover {
+  background-color: #c73b35;
 }
 
 /*# sourceMappingURL=styles.css.map */

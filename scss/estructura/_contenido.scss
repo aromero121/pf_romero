@@ -1,4 +1,6 @@
 
+@import "../utilidades/variables";
+
 .navbar {
     background:$color-header;
 
@@ -9,40 +11,23 @@
     }
   } 
 
-.text-justify {
-    text-align: justify;
+@for $i from 1 through 8 {
+  #prod-#{$i} {
+    transition: height 1s;
+    
+    &:hover {
+      transform: scale(1.05);
+      z-index: 2;
+      border: 2px solid black;
+    }
   }
-
-#cuotas {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;   
 }
 
-#tarjetas {
-  height: 5vh;
-}
-
-#tarjetas-adheridos {
-  height: 5vh;
-  font-weight: bold;
-  text-align: center;  
-}
-
-#prod-1,#prod-2,#prod-3,#prod-4,#prod-5,#prod-6,#prod-7,#prod-8 {
-  transition: height 1s;
-}
-
-#prod-1:hover,#prod-2:hover,#prod-3:hover,#prod-4:hover,#prod-5:hover,#prod-6:hover,#prod-7:hover,#prod-8:hover {
-    transform: scale(1.05);
-    z-index: 2;
-    border: 2px solid black;
-}
-
-
-#cat-prod-1,#cat-prod-2,#cat-prod-3,#cat-prod-4 {
+@for $i from 1 through 4 {
+  #cat-prod-#{$i} {
     transition: height 1s;
   }
+}
 
 @keyframes cambiar-color {
   0% {
@@ -62,13 +47,32 @@
   }
 }
   
-
 .animar-texto {
   color: white;
 
   &:hover {
-      animation: cambiar-color 0.5s forwards;
+      animation: cambiar-color $tiempo-transicion-txt forwards;
       font-weight: bold; 
       font-size: 2rem;
   }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#cuotas {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;   
+}
+
+#tarjetas {
+  height: 5vh;
+}
+
+#tarjetas-adheridos {
+  height: 5vh;
+  font-weight: bold;
+  text-align: center;  
 }

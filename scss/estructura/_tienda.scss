@@ -1,24 +1,26 @@
 
+@import "../utilidades/variables";
+
+#banner-oferta-letras {
+    background-color: $color-fondo-pages;
+}
+
+.img-categ {
+    @include img-ajuste; 
+}
+
 #categorias-en-oferta{
     height: 20vh;
     font-weight: bold;
     text-align: center; 
 }
 
+#productos {
+    height: 40vh;
+}
+
 #categorias-leyenda {
     height: 8vh;
     font-weight: bold;
     text-align: center; 
-}
-
-.img-categ {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;   
-}
-
-
-#productos {
-    height: 40vh;
-    /* transition: 0.2s; */
 }
